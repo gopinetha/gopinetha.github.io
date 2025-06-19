@@ -1,12 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React from 'react';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import ExperienceSection from '@/components/sections/ExperienceSection';
+import EducationSection from '@/components/sections/EducationSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import CertificationsSection from '@/components/sections/CertificationsSection';
+import AchievementsSection from '@/components/sections/AchievementsSection';
+import GoalsSection from '@/components/sections/GoalsSection';
+import ContactSection from '@/components/sections/ContactSection';
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      
+      <main className="pt-16">
+        <HeroSection />
+        <AboutSection />
+        <ExperienceSection />
+        <EducationSection />
+        <SkillsSection />
+        <CertificationsSection />
+        <AchievementsSection />
+        <GoalsSection />
+        <ContactSection />
+      </main>
+      
+      <Footer />
     </div>
   );
 };
